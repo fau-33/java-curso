@@ -44,5 +44,22 @@ public class Exercicios {
         char letra = 'B';
         int numero = (int) letra;
         System.out.println(numero);
+
+        // EXERCICIO 3
+        double numero1 = 15.75;
+        double numero2 = 20.40;
+        double soma = numero1 + numero2;
+        System.out.println(soma);
+
+        // EXERCICIO 4
+        long numero3 = 2_000_000_000L;
+        int numero4 = (int) numero3;
+        System.out.println(numero4);
+
+        // EXERCICIO 5
+        String frase1 = "Olá, Mundo!";
+        String frase2 = " Bem-vindo ao Java!";
+        String concatenacaoFrase = frase1 + frase2;
+        System.out.println(concatenacaoFrase);
     }
 }
