@@ -78,5 +78,23 @@ public class Variavel{
         int letraInt = (int) letraChar;
         System.out.println(letraInt);
 
+        // 12 - constantes
+        final int DIAS_DA_SEMANA = 7;
+        System.out.println("Dias da semana: " + DIAS_DA_SEMANA);
+
+        // 13 - var
+        var z = 10;
+        System.out.println(z);
+
+        z = 5;
+        System.out.println(z);
+
+        var texto2 = 10.5;
+        var texto3 = "Ola";
+        System.out.println(texto2);
+        System.out.println(texto3);
+
+    
+
     }
 }

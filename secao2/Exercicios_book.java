@@ -8,6 +8,8 @@ public class Exercicios_book {
       EXERCÍCIO 2: Crie um programa que converta um valor double em int e outro valor int em double.Exiba o resultado.(Casting)
 
       EXERCÍCIO 3: Crie um programa que declare duas variáveis int e realize as operações de soma, subtração, multiplicação, divisão e módulo entre elas.Exiba o resultado de cada operação.
+
+      EXERCÍCIO 4: Crie um programa que utilize a palavra-chave final para declarar uma constante que representa a velocidade da luz. Exiba o valor dessa constante.
      */
     public static void main(String[] args) {
         //Exercicio 1
@@ -46,5 +48,11 @@ public class Exercicios_book {
         System.out.println("Multiplicação: " + multiplicacao);
         System.out.println("Divisão: " + divisao);
         System.out.println("Módulo: " + modulo);
+
+        //Exercicio 4
+        final double VELOCIDADE_DA_LUZ = 299792458;//metros por segundo
+        System.out.println("Velocidade da luz: " + VELOCIDADE_DA_LUZ + " m/s");
+
+        //VELOCIDADE_DA_LUZ = 300000000;//Erro, pois a constante VELOCIDADE_DA_LUZ foi declarada como final
     }
 }
