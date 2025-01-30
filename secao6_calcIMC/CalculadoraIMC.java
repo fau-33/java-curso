@@ -17,7 +17,7 @@ import java.util.Scanner;
 public class CalculadoraIMC {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); // Declaração do Scanner
 
         System.out.println("Digite o peso em kg: ");
         double peso = scanner.nextDouble();
@@ -29,18 +29,16 @@ public class CalculadoraIMC {
 
         String imcFormatado = String.format("%.2f", imc);
 
-
-        if(imc < 18.5) {
+        if (imc < 18.5) {
             System.out.println("Seu IMC é: " + imcFormatado + " Abaixo do peso");
-        } else if(imc >= 18.5 && imc <= 24.9) {
+        } else if (imc >= 18.5 && imc <= 24.9) {
             System.out.println("Seu IMC é: " + imcFormatado + " Peso normal");
-        } else if(imc >= 25 && imc <= 29.9) {
+        } else if (imc >= 25 && imc <= 29.9) {
             System.out.println("Seu IMC é: " + imcFormatado + " Sobrepeso");
         } else {
             System.out.println("Seu IMC é: " + imcFormatado + " Obesidade");
         }
 
-        scanner.close();
-        
+        scanner.close(); // Fechando o Scanner manualmente
     }
 }
