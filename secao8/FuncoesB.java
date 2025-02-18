@@ -15,8 +15,8 @@ public class FuncoesB {
     System.out.println(r2);
 
     // 6 - Funções com switch
-    System.out.println(diaDaSemana(1));
-    System.out.println(diaDaSemana(10));
+    // System.out.println(diaDaSemana(1));
+    // System.out.println(diaDaSemana(10));
 
     // 7 - System exit
     verificarAutenticacao("admin", "SenhaSegura");
@@ -52,18 +52,18 @@ public class FuncoesB {
 
   }
 
-  public static String diaDaSemana(int dia) {
-    return switch (dia) {
-      case 1 -> "Segunda-feira";
-      case 2 -> "Terça-feira";
-      case 3 -> "Quarta-feira";
-      case 4 -> "Quinta-feira";
-      case 5 -> "Sexta-feira";
-      case 6 -> "Sábado";
-      case 7 -> "Domingo";
-      default -> "Dia inválido";
-    };
-  }
+  // public static String diaDaSemana(int dia) {
+  //   return switch (dia) {
+  //     case 1 -> "Segunda-feira";
+  //     case 2 -> "Terça-feira";
+  //     case 3 -> "Quarta-feira";
+  //     case 4 -> "Quinta-feira";
+  //     case 5 -> "Sexta-feira";
+  //     case 6 -> "Sábado";
+  //     case 7 -> "Domingo";
+  //     default -> "Dia inválido";
+  //   };
+  // }
 
   public static void verificarAutenticacao(String usuario, String senha) {
     if (!usuario.equals("admin") && !usuario.equals("SenhaSegura")) {

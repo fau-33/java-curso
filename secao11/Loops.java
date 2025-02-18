@@ -62,5 +62,41 @@ public class Loops {
             numero = (int) (Math.random() * 10);
             System.out.println("Numero: " + numero);
         } while (numero != 1);
+
+        // 5 - break
+        // o break pode ser usado em qualquer estrutura 
+        for (int k = 0; k <= 10; k++) {
+            System.out.println("Count: " + k);
+
+            if (k == 5) {
+              System.out.println("Parando o loop!");
+                break;
+            }
+        }
+
+        // 6 - continue
+        for(int x = 10; x >= 0; x--){
+            if(x % 2 == 0){
+              System.out.println("Par!");
+                continue;
+            }
+            System.out.println("Count: " + x);
+        }
+
+        // 7 - Nested Loops
+        for (int m = 1; m <= 3; m++) {
+          System.out.println("Loop externo");
+            for (int n = 1; n <= 3; n++) {
+                System.out.println("m: " + m + " n: " + n + (m * n));
+            }
+        }
+
+        // padrão estrela
+        for(int o = 1; o <= 5; o++){
+            for(int p = 1; p <= o; p++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
     }
 }
